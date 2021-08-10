@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  background-color: #000;
+}
+
+.main_container {
+}
+
+.pixelWave {
+  width: 100%;
+  height: 80px;
+  background-color: #f6f6f6;
+  background-image: url('./img/wave.svg');
+}
+
+.availableSlots_container {
+  position: fixed;
+  text-align: center;
+  left: 0;
+  top: 40%;
+  z-index: 9999;
+}
+
+.availableSlots_content {
+  padding-bottom: 1rem;
+}
+.availableSlots_content img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(-2px 2px 0 #fff) drop-shadow(2px 2px 0 #fff) drop-shadow(2px -2px 0 #fff)
+    drop-shadow(-2px -2px 0 #fff);
+}
+
+.availableSlots_text {
+  background-color: #ffcc00;
+  width: 80%;
+  border-radius: 0 10px 10px 0;
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+
+.stakingInfo_container {
+  text-align: center;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 1rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.input_text {
+  width: 60%;
+  height: 50px;
+  font-size: 1.5rem;
+  border: 2px solid #aaa;
+  text-align: center;
+}
+
+.btn_send {
+  background-color: royalblue;
+  cursor: pointer;
+  border: none;
+  width: 80px;
+  height: 50px;
+  font-size: 1.5rem;
+  background-color: #ffcc00;
+  font-weight: bolder;
+}
+
+#cards_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0 0 1rem;
+  background: rgb(22, 22, 22);
+  background: linear-gradient(0deg, rgb(15, 15, 15) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.cardsForAddress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.cards_content {
+  text-align: center;
+  width: 250px;
+  height: max-content;
+  padding: 1rem;
+  background-color: #f6f6f6;
+  border-radius: 0 0 0rem 0rem;
+  border: 5px solid #000;
+  filter: drop-shadow(0 1.2rem 0 #6a4833) drop-shadow(0 -1.2rem 0 #6a4833);
+  /* box-shadow: 0px -15px 0 0px #ffcc00; */
+}
+
+.cards_content p {
+  padding-bottom: 1rem;
+}
+
+.chain_logo {
+  width: 50px;
+  height: 50px;
+}
+
+h2 {
+  background-color: #ffcc00;
+  width: max-content;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 1rem;
+}
+
+.btnRemoveAddress {
+  margin-left: 1rem;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+}
